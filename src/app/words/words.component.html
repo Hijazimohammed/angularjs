@@ -1,0 +1,8 @@
+<h2>My Words</h2>
+<ul class="words">
+  <li *ngFor="let word of words" (click)="onSelect(word)" [class.selected]='word===selectedWord'>
+    <span class="badge">{{word.id}}</span> {{word.text}} ({{word.happy ? ' is happy ' :'is not happy '}})
+  </li>
+</ul>
+
+<app-words-details [word]=selectedWord></app-words-details>

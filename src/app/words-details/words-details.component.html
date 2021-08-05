@@ -1,0 +1,20 @@
+<div *ngIf="word">
+  <h2>
+    {{word.text |uppercase}} Detailes ({{word.happy ?'is happy':'is not happy'}})
+    <div>
+      <span>
+        id :
+      </span>{{word.id}}
+    </div>
+    <div>
+      <label>text :
+        <input [(ngModel)]="word.text" placeholder="text" />
+      </label>
+    </div>
+    <div>
+      <label>happy :
+        <input [(ngModel)]="word.happy" placeholder="text" type="checkbox" />
+      </label>
+    </div>
+  </h2>
+</div>

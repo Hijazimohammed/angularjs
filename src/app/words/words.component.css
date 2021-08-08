@@ -23,6 +23,16 @@
   background-color: #cfd8dc;
   color: white;
 }
+.words li a {
+  text-decoration: none;
+  color: #405061;
+  font-size: 1.3rem;
+}
+.words li a:hover {
+  color: #222729;
+  background-color: #ddd;
+  left: 0.1em;
+}
 .words li.selected :hover {
   background-color: #bbdbdc;
   color: white;

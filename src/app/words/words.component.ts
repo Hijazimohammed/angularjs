@@ -9,12 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./words.component.css']
 })
 export class WordsComponent implements OnInit {
-  words!:Word[];
-  selectedWord!: Word;
-  onSelect(word:Word):void{
-    this.selectedWord=word;
-    this.messageService.add('Words Component : Selected Word id='+word.id)
-  }
+  words:Word[]=[];
+
 
   getWords():void{
     this.wordService.getWords().subscribe(words => this.words=words);

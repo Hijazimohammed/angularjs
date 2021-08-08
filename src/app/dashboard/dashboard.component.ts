@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
   constructor(private wordService:WordService) { }
 
   getWords():void{
-    this.wordService.getWords().subscribe(words => this.words = words.slice(0,7));
+    this.wordService.getWords().subscribe(words => this.words = words);
   }
   ngOnInit(): void {
     this.getWords()

@@ -1,8 +1,21 @@
 <h2>My Words</h2>
+
+<div>
+  <label>Word:
+    <input #wordText>
+  </label>
+  <label>Is happy :
+    <input type="checkbox" #is_happy>
+  </label>
+  <button (click)="add(wordText.value , is_happy.checked); wordText.value='' ;
+  is_happy.checked=false">Add</button>
+</div>
+
 <ul class="words">
   <li *ngFor="let word of words">
     <a routerLink="/detail/{{word.id}}">
       <span class="badge">{{word.id}}</span> {{word.text}} ({{word.happy ? ' is happy ' :'is not happy '}})
     </a>
+    <button class="delete" (click)="delete(word)" title="delete word">x</button>
   </li>
 </ul>

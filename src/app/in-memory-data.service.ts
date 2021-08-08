@@ -15,6 +15,8 @@ export class InMemoryDataService {
       {id:5,text:'noon',happy:false},
       {id:6,text:'rotor',happy:true},
       {id:7,text:'roman',happy:false},
+      {id:8,text:'Germany',happy:true},
+      {id:9,text:'Holandi',happy:false}
     ];
     return {words};
   }

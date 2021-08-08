@@ -10,6 +10,7 @@ import { WordsComponent } from './words/words.component';
 import { WordsDetailsComponent } from './words-details/words-details.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WordSearchComponent } from './word-search/word-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     WordsComponent,
     WordsDetailsComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    WordSearchComponent
   ],
   imports: [
     BrowserModule,

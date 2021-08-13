@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { WordSearchComponent } from './word-search.component';
 
@@ -8,9 +10,14 @@ describe('WordSearchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WordSearchComponent ]
+      declarations: [WordSearchComponent],
+      imports: [
+        HttpClientModule
+
+      ]
+
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
